@@ -47,6 +47,8 @@ def prediction(data:BankNote):
     return {
         'prediction':pred
         }
+print(classifier.predict([[1,2,3,4]]))
+
 
 #Deployment
 if __name__=='__main__':
@@ -55,5 +57,8 @@ if __name__=='__main__':
 #Command to launch app:
 #uvicorn app:app --reload
 
+#To use the predict feature, use the Swagger api in FastAPI by entering '/docs'
+#example: 127.0.0.1/doc for local api
+#for heroku: https://deploy-banknote-classifier.herokuapp.com/docs
 
     
